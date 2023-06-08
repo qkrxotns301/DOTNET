@@ -30,6 +30,9 @@ jobs:
     - name: Perform a Pester test from the command-line
       shell: pwsh
       run: (Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release) -ge 378389
+      
+    - name: pwd
+      run: ls
 
     - name: Move Folder
       run: cd C:\Program Files\dotnet\DotNet4.5-ApiGateway
