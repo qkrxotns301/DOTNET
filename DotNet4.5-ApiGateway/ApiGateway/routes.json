@@ -1,0 +1,12 @@
+﻿ [
+    {
+      "endpoint": "/movies",
+      "isdefault": false,
+      "destinationurl": "http://localhost:8090/movies/"       
+    },
+    {
+      "endpoint": "*",
+      "isdefault": true,
+      "destination": "http://localhost:8091/songs/"
+    }
+  ]
