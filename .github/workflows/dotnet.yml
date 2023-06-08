@@ -34,6 +34,9 @@ jobs:
     - name: pwd
       run: ls
 
+    - name: pwd
+      run: pwd
+      
     - name: Move Folder
       run: cd C:\Program Files\dotnet\DotNet4.5-ApiGateway
       
