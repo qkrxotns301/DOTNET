@@ -33,6 +33,9 @@ jobs:
 
     - name: Move Folder
       run: cd DotNet4.5-ApiGateway
+      
+    - name: pwd
+      run: pwd
     
     - name: Build
       run: dotnet build
