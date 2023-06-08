@@ -34,8 +34,6 @@ jobs:
     - name: Move Folder
       run: cd DotNet4.5-ApiGateway
     
-    - name: Restore dependencies
-      run: dotnet restore
     - name: Build
       run: dotnet build --framework net45
     - name: Test
