@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 6.x
     
     - name: check DOTNET 4.5 VERSION
-      run: pwsh -DOTNET/script.ps1
+      run: pwsh -DOTNET/script
 
     - name: Restore dependencies
       run: dotnet restore
