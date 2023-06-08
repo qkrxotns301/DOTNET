@@ -38,10 +38,13 @@ jobs:
       run: pwd
       
     - name: Move Folder
-      run: cd D:\a\DOTNET\DOTNET\DotNet4.5-ApiGateway
+      run: cd D:\a\DOTNET\DOTNET\DotNet4.5-ApiGateway\
       
     - name: pwd
       run: ls
+    
+    - name: path
+      run: pwd
     
     - name: Build
       run: dotnet build
