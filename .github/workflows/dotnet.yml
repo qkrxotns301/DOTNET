@@ -23,30 +23,33 @@ jobs:
       with:
         dotnet-version: 6.x
       
-    - name: Perform a Pester test from the command-line
-      shell: pwsh
-      run: dotnet new globaljson --roll-forward feature
-    
+     
     - name: Perform a Pester test from the command-line
       shell: pwsh
       run: (Get-ItemPropertyValue -LiteralPath 'HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name Release) -ge 378389
       
     - name: pwd
+      shell: pwsh
       run: ls
 
     - name: pwd
+      shell: pwsh
       run: pwd
       
     - name: Move Folder
+      shell: pwsh
       run: cd DotNet4.5-ApiGateway
       
     - name: Depth
+      shell: pwsh
       run: ls DotNet4.5-ApiGateway/
       
     - name: pwd
+      shell: pwsh
       run: ls
     
     - name: path
+      shell: pwsh
       run: pwd
     
     - name: Build
